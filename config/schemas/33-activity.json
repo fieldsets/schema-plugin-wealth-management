@@ -1,0 +1,69 @@
+{
+    "token": "activity",
+    "label": "Activity",
+    "parent": "associations",
+    "fields": [
+        {
+            "token": "activity_name",
+            "label": "Activity Name",
+            "type": "string",
+            "store": "filter"
+        },
+        {
+            "token": "activity_description",
+            "label": "Activity Description",
+            "type": "string",
+            "store": "filter"
+        },
+        {
+            "token": "activity_type",
+            "label": "Activity Type",
+            "type": "string",
+            "store": "filter"
+        },
+        {
+            "token": "activity_account",
+            "label": "Activity Account",
+            "parent": "accounts",
+            "type": "fieldset",
+            "store": "record"
+        },
+        {
+            "token": "activity_asset",
+            "label": "Activity Asset",
+            "parent": "assets",
+            "type": "fieldset",
+            "store": "record"
+        },
+        {
+            "token": "asset_purchase_qty",
+            "label": "Asset Purchase Quantity",
+            "type": "decimal",
+            "store": "record"
+        },
+        {
+            "token": "asset_purchase_price",
+            "label": "Asset Purchase Price",
+            "type": "decimal",
+            "store": "record"
+        },
+        {
+            "token": "asset_purchase_cost",
+            "label": "Asset Purchase Cost",
+            "type": "decimal",
+            "store": "record"
+        },
+        {
+            "token": "asset_total_qty",
+            "label": "Asset Total Quantity",
+            "type": "decimal",
+            "store": "record"
+        },
+        {
+            "token": "asset_total_cost",
+            "label": "Asset Total Cost",
+            "type": "decimal",
+            "store": "record"
+        }
+    ]
+}
