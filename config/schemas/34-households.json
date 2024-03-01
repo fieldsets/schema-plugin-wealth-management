@@ -1,0 +1,26 @@
+[
+    {
+        "token": "household",
+        "label": "Household",
+        "fields": [
+            {
+                "token": "household_name",
+                "label": "Household Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "short_name",
+                "label": "Short Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "primary_contact",
+                "label": "Household Primary Contact",
+                "type": "fieldset",
+                "store": "filter"
+            }
+        ]
+    }
+]

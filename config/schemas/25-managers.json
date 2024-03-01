@@ -1,0 +1,16 @@
+[
+    {
+        "token": "managers",
+        "label": "Managers",
+        "parent": "users",
+        "fields": [
+            {
+                "token": "manager_type",
+                "label": "Manager Type",
+                "parent": "managers",
+                "type": "enum",
+                "store": "filter"
+            }
+        ]
+    }
+]

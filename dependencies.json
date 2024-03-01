@@ -1,6 +1,12 @@
 {
     "schemas":[],
-    "plugins":[],
+    "plugins":[
+        {
+            "name": "crm",
+            "token": "schema-plugin-crm",
+            "url": "git@github.com:fieldsets/schema-plugin-crm.git"
+        }
+    ],
     "packages":[],
     "containers": []
 }

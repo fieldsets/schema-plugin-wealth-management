@@ -1,0 +1,40 @@
+[
+    {
+        "token": "accounts",
+        "label": "Accounts",
+        "parent": "associations",
+        "fields": [
+            {
+                "token": "account_id",
+                "label": "Account ID",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "account_name",
+                "label": "Account Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "account_type",
+                "label": "Account Type",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "account_group",
+                "label": "Account Group",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "account_assets",
+                "label": "Account Assets",
+                "parent": "assets",
+                "type": "fieldset",
+                "store": "lookup"
+            }
+        ]
+    }
+]

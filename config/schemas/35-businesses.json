@@ -1,0 +1,26 @@
+[
+    {
+        "token": "businesses",
+        "label": "Businesses",
+        "fields": [
+            {
+                "token": "business_name",
+                "label": "Business Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "short_name",
+                "label": "Short Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "primary_contact",
+                "label": "Household Primary Contact",
+                "type": "fieldset",
+                "store": "filter"
+            }
+        ]
+    }
+]

@@ -1,0 +1,71 @@
+[
+    {
+        "token": "asset_class",
+        "label": "Asset Class",
+        "parent": "associations",
+        "fields": [
+            {
+                "token": "asset_class_name",
+                "label": "Asset Class Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "asset_class_code",
+                "label": "Asset Class Code",
+                "type": "string",
+                "store": "filter"
+            }
+        ]
+    },
+    {
+        "token": "assets",
+        "label": "Assets",
+        "parent": "members",
+        "fields": [
+            {
+                "token": "asset_type",
+                "label": "Asset Type",
+                "parent": "asset_class",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "asset_symbol",
+                "label": "Asset Symbol",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "asset_name",
+                "label": "Asset Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "asset_url",
+                "label": "Asset URL",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "asset_close_price",
+                "label": "Asset Close Price",
+                "value": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "asset_open_price",
+                "label": "Asset Open Price",
+                "value": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "asset_avg_price",
+                "label": "Asset Avg Price",
+                "value": "decimal",
+                "store": "record"
+            }
+        ]
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "token": "clients",
+        "label": "Clients",
+        "parent": "members",
+        "fields": [
+            {
+                "token": "client_type",
+                "label": "Client Type",
+                "parent": "clients",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "client_status",
+                "label": "Status",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "login",
+                "label": "Login",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "firstname",
+                "label": "First Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "lastname",
+                "label": "Last Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "email",
+                "label": "Email Address",
+                "type": "string",
+                "store": "lookup"
+            },
+            {
+                "token": "phone_number",
+                "label": "Phone Number",
+                "type": "object",
+                "store": "lookup"
+            },
+            {
+                "token": "address",
+                "label": "Address",
+                "type": "object",
+                "store": "lookup"
+            }
+        ]
+    }
+]
