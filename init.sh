@@ -10,7 +10,7 @@ $config = Get-Content -Raw -Path "$($plugin_path)/config.json" | ConvertFrom-Jso
 $schemas = Get-ChildItem "$($plugin_path)/config/schemas/*.json"
 
 foreach ($schema in $schemas) {
-    $schemaObject = Get-Content -Raw -Path "$($schema)" | ConvertFrom-Json
+    $schemaObject = Get-Content -Raw -Path "$($schema)" | ConvertFrom-Json -NoEnumerate -AsHashtable
     if ($null -ne $schemaObject) {
         $schemaJSON = ConvertTo-Json -depth 10 -Compress -InputObject $schemaObject
         $split_name = ($schema.BaseName).split("-",2)
