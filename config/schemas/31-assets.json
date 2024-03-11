@@ -51,19 +51,19 @@
             {
                 "token": "asset_close_price",
                 "label": "Asset Close Price",
-                "value": "decimal",
+                "type": "decimal",
                 "store": "record"
             },
             {
                 "token": "asset_open_price",
                 "label": "Asset Open Price",
-                "value": "decimal",
+                "type": "decimal",
                 "store": "record"
             },
             {
                 "token": "asset_avg_price",
                 "label": "Asset Avg Price",
-                "value": "decimal",
+                "type": "decimal",
                 "store": "record"
             }
         ]
