@@ -31,7 +31,7 @@
             {
                 "token": "account_assets",
                 "label": "Account Assets",
-                "parent": "assets",
+                "values": "assets",
                 "type": "fieldset",
                 "store": "lookup"
             }

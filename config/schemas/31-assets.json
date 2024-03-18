@@ -9,12 +9,6 @@
                 "label": "Asset Class Name",
                 "type": "string",
                 "store": "filter"
-            },
-            {
-                "token": "asset_class_code",
-                "label": "Asset Class Code",
-                "type": "string",
-                "store": "filter"
             }
         ]
     },
@@ -26,7 +20,7 @@
             {
                 "token": "asset_type",
                 "label": "Asset Type",
-                "parent": "asset_class",
+                "values": "asset_class",
                 "type": "enum",
                 "store": "filter"
             },

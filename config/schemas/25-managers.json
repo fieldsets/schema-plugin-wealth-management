@@ -7,9 +7,30 @@
             {
                 "token": "manager_type",
                 "label": "Manager Type",
-                "parent": "managers",
+                "values": "managers",
                 "type": "enum",
                 "store": "filter"
+            },
+            {
+                "token": "association_reference",
+                "label": "Association Reference",
+                "values": "associations",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "member_reference",
+                "label": "Member Reference",
+                "values": "members",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "user_reference",
+                "label": "User Reference",
+                "values": "users",
+                "type": "fieldset",
+                "store": "lookup"
             }
         ]
     }

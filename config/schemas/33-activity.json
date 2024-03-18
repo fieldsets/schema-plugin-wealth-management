@@ -25,14 +25,14 @@
             {
                 "token": "activity_account",
                 "label": "Activity Account",
-                "parent": "accounts",
+                "values": "accounts",
                 "type": "fieldset",
                 "store": "record"
             },
             {
                 "token": "activity_asset",
                 "label": "Activity Asset",
-                "parent": "assets",
+                "values": "assets",
                 "type": "fieldset",
                 "store": "record"
             },

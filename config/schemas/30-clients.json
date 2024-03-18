@@ -7,7 +7,7 @@
             {
                 "token": "client_type",
                 "label": "Client Type",
-                "parent": "clients",
+                "values": "clients",
                 "type": "enum",
                 "store": "filter"
             },
@@ -51,6 +51,13 @@
                 "token": "address",
                 "label": "Address",
                 "type": "object",
+                "store": "lookup"
+            },
+            {
+                "token": "manager_reference",
+                "label": "Manager Reference",
+                "values": "managers",
+                "type": "fieldset",
                 "store": "lookup"
             }
         ]
