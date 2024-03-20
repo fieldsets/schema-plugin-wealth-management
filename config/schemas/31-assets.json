@@ -20,7 +20,7 @@
             {
                 "token": "asset_type",
                 "label": "Asset Type",
-                "values": "asset_class",
+                "parent": "asset_class",
                 "type": "enum",
                 "store": "filter"
             },

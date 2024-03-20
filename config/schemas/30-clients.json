@@ -7,14 +7,13 @@
             {
                 "token": "client_type",
                 "label": "Client Type",
-                "values": "clients",
                 "type": "enum",
                 "store": "filter"
             },
             {
                 "token": "client_status",
                 "label": "Status",
-                "type": "string",
+                "type": "enum",
                 "store": "filter"
             },
             {
@@ -56,7 +55,7 @@
             {
                 "token": "manager_reference",
                 "label": "Manager Reference",
-                "values": "managers",
+                "parent": "managers",
                 "type": "fieldset",
                 "store": "lookup"
             }

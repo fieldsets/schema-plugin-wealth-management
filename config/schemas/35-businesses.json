@@ -18,7 +18,7 @@
             {
                 "token": "primary_contact",
                 "label": "Household Primary Contact",
-                "values": "clients",
+                "parent": "clients",
                 "type": "fieldset",
                 "store": "filter"
             }

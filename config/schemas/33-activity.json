@@ -19,20 +19,20 @@
             {
                 "token": "activity_type",
                 "label": "Activity Type",
-                "type": "string",
+                "type": "enum",
                 "store": "filter"
             },
             {
                 "token": "activity_account",
                 "label": "Activity Account",
-                "values": "accounts",
+                "parent": "accounts",
                 "type": "fieldset",
                 "store": "record"
             },
             {
                 "token": "activity_asset",
                 "label": "Activity Asset",
-                "values": "assets",
+                "parent": "assets",
                 "type": "fieldset",
                 "store": "record"
             },

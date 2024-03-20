@@ -19,7 +19,7 @@
             {
                 "token": "account_type",
                 "label": "Account Type",
-                "type": "string",
+                "type": "enum",
                 "store": "filter"
             },
             {
@@ -31,7 +31,7 @@
             {
                 "token": "account_assets",
                 "label": "Account Assets",
-                "values": "assets",
+                "parent": "assets",
                 "type": "fieldset",
                 "store": "lookup"
             }
