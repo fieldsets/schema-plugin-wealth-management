@@ -5,14 +5,36 @@
         "parent": "members",
         "fields": [
             {
-                "token": "client_type",
-                "label": "Client Type",
-                "type": "enum",
+                "token": "client_id",
+                "label": "Client ID",
+                "type": "number",
                 "store": "filter"
+            },
+            {
+                "token": "client_uuid",
+                "label": "Client UUID",
+                "type": "uuid",
+                "store": "filter"
+            },
+            {
+                "token": "client_dob",
+                "label": "Client Birthdate",
+                "type": "date",
+                "store": "document"
             },
             {
                 "token": "client_status",
                 "label": "Status",
+                "type": "enum",
+                "store": "filter",
+                "values": [
+                    "active",
+                    "inactive"
+                ]
+            },
+            {
+                "token": "client_type",
+                "label": "Client Type",
                 "type": "enum",
                 "store": "filter"
             },
@@ -33,6 +55,24 @@
                 "label": "Last Name",
                 "type": "string",
                 "store": "filter"
+            },
+            {
+                "token": "middlename",
+                "label": "Middle Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "gender",
+                "label": "Gender",
+                "type": "enum",
+                "store": "filter",
+                "values": [
+                    "Male",
+                    "Female",
+                    "Other",
+                    "NA"
+                ]
             },
             {
                 "token": "email",
@@ -56,6 +96,58 @@
                 "token": "manager_reference",
                 "label": "Manager Reference",
                 "parent": "managers",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "household_role",
+                "label": "Household Role",
+                "type": "enum",
+                "store": "lookup",
+                "values": [
+                    { "child": "Child"},
+                    {"child_in_law": "Child-in-law"},
+                    {"ex_partner": "Ex-Partner"},
+                    {"ex_spouse": "Ex-Spouse"},
+                    {"fiance": "Fiance"},
+                    {"grandchild": "Grandchild"},
+                    {"grandparent": "Grandparent"},
+                    {"guardian": "Guardian"},
+                    {"other_extended_family": "Other Extended Family"},
+                    {"parent": "Parent"},
+                    {"parent_in_law": "Parent-in-law"},
+                    {"partner": "Partner"},
+                    {"primary_contact": "Primary Contact"},
+                    {"sibling": "Sibling"},
+                    {"sibling_in_law": "Sibling-in-law"},
+                    {"spouse": "Spouse"},
+                    {"step_child": "Step Child"},
+                    {"step_grandchild": "Step Grandchild"},
+                    {"step_grandparent": "Step Grandparent"},
+                    {"step_parent": "Step Parent"},
+                    {"step_sibling": "Step Sibling"},
+                    {"other": "Other"}
+                ]
+            },
+            {
+                "token": "household_reference",
+                "label": "Household",
+                "parent": "household",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "household_reference_role",
+                "label": "Household Role",
+                "parent": "household_reference",
+                "values": "household_role",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "business_reference",
+                "label": "Business",
+                "parent": "businesses",
                 "type": "fieldset",
                 "store": "lookup"
             }

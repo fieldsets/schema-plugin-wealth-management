@@ -1,0 +1,56 @@
+[
+    {
+        "token": "household",
+        "label": "Household",
+        "parent": "associations",
+        "fields": [
+            {
+                "token": "household_id",
+                "label": "Household ID",
+                "type": "number",
+                "store": "filter"
+            },
+            {
+                "token": "household_uuid",
+                "label": "Household UUID",
+                "type": "uuid",
+                "store": "filter"
+            },
+            {
+                "token": "household_status",
+                "label": "Status",
+                "type": "enum",
+                "store": "filter",
+                "values": [
+                    "active",
+                    "inactive"
+                ]
+            },
+            {
+                "token": "address",
+                "label": "Address",
+                "type": "object",
+                "store": "lookup"
+            },
+            {
+                "token": "phone_number",
+                "label": "Phone Number",
+                "type": "object",
+                "store": "lookup"
+            },
+            {
+                "token": "household_segment",
+                "label": "Household Segment",
+                "type": "enum",
+                "store": "filter",
+                "values": [
+                    "A+",
+                    "A",
+                    "B",
+                    "C",
+                    "Unsegmented"
+                ]
+            }
+        ]
+    }
+]
