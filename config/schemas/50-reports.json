@@ -1,0 +1,44 @@
+[
+    {
+        "token": "reports",
+        "label": "Reports",
+        "parent": "associations",
+        "fields": [
+            {
+                "token": "report_type",
+                "label": "Report Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "report_output",
+                "label": "Report Output",
+                "type": "enum",
+                "store": "filter",
+                "values": [
+                    {"excel" : "Excel Spreadsheet"},
+                    {"csv" : "Comma Separated Values"},
+                    {"tsv": "Tab Separated Values"},
+                    {"text" : "Text File"},
+                    {"json": "JSON File"},
+                    {"md": "Markdown File"},
+                    {"xml": "XML File"},
+                    {"custom": "Custom Output"},
+                    {"none": "No Output"}
+                ]
+            },
+            {
+                "token": "report_output_path",
+                "label": "Report Output Path",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "report_input_path",
+                "label": "Report Input Path",
+                "type": "string",
+                "store": "filter"
+            }
+        ]
+    }
+]

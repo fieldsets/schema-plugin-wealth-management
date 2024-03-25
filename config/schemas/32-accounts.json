@@ -29,12 +29,26 @@
                 "store": "filter"
             },
             {
-                "token": "account_assets",
-                "label": "Account Assets",
-                "parent": "assets",
+                "token": "client_reference",
+                "label": "Client Reference",
+                "parent": "clients",
                 "type": "fieldset",
                 "store": "lookup"
-            }
+            },
+            {
+                "token": "household_reference",
+                "label": "Household Reference",
+                "parent": "household",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "business_reference",
+                "label": "Business Reference",
+                "parent": "business",
+                "type": "fieldset",
+                "store": "lookup"
+            },
         ]
     }
 ]

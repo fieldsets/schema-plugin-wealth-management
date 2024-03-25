@@ -1,0 +1,45 @@
+[
+    {
+        "token": "holdings",
+        "label": "Holdings",
+        "parent": "activity",
+        "fields": [
+            {
+                "token": "holdings_account",
+                "label": "Holdings Account",
+                "parent": "accounts",
+                "type": "fieldset",
+                "store": "record"
+            },
+            {
+                "token": "holdings_asset",
+                "label": "Holdings Asset",
+                "parent": "assets",
+                "type": "fieldset",
+                "store": "record"
+            },
+            {
+                "token": "holdings_price",
+                "label": "Holdings Asset Price",
+                "type": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "holdings_quantity",
+                "label": "Holdings Quantity",
+                "type": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "holdings_value",
+                "label": "Holdings Value",
+                "type": "function",
+                "value": {
+                    "type": "sql",
+                    "cmd": "(holdings_price * holdings_quantity)"
+                },
+                "store": "record"
+            }
+        ]
+    }
+]

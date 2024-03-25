@@ -5,22 +5,16 @@
         "parent": "associations",
         "fields": [
             {
-                "token": "activity_name",
-                "label": "Activity Name",
-                "type": "string",
-                "store": "filter"
-            },
-            {
                 "token": "activity_description",
                 "label": "Activity Description",
                 "type": "string",
-                "store": "filter"
+                "store": "record"
             },
             {
                 "token": "activity_type",
                 "label": "Activity Type",
                 "type": "enum",
-                "store": "filter"
+                "store": "record"
             },
             {
                 "token": "activity_account",
@@ -37,32 +31,20 @@
                 "store": "record"
             },
             {
-                "token": "asset_purchase_qty",
-                "label": "Asset Purchase Quantity",
+                "token": "activity_qty",
+                "label": "Activity Quantity",
                 "type": "decimal",
                 "store": "record"
             },
             {
-                "token": "asset_purchase_price",
-                "label": "Asset Purchase Price",
+                "token": "activity_price",
+                "label": "Activity Price",
                 "type": "decimal",
                 "store": "record"
             },
             {
-                "token": "asset_purchase_cost",
-                "label": "Asset Purchase Cost",
-                "type": "decimal",
-                "store": "record"
-            },
-            {
-                "token": "asset_total_qty",
-                "label": "Asset Total Quantity",
-                "type": "decimal",
-                "store": "record"
-            },
-            {
-                "token": "asset_total_cost",
-                "label": "Asset Total Cost",
+                "token": "activity_cost",
+                "label": "Activity Cost",
                 "type": "decimal",
                 "store": "record"
             }

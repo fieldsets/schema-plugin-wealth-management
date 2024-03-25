@@ -1,7 +1,7 @@
 [
     {
-        "token": "businesses",
-        "label": "Businesses",
+        "token": "business",
+        "label": "Business",
         "parent": "associations",
         "fields": [
             {
