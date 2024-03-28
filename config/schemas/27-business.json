@@ -5,35 +5,13 @@
         "parent": "associations",
         "fields": [
             {
-                "token": "business_id",
-                "label": "Business ID",
-                "type": "number",
-                "store": "filter"
-            },
-            {
-                "token": "business_uuid",
-                "label": "Business UUID",
-                "type": "uuid",
-                "store": "filter"
-            },
-            {
-                "token": "business_status",
-                "label": "Status",
-                "type": "enum",
-                "store": "filter",
-                "values": [
-                    "active",
-                    "inactive"
-                ]
-            },
-            {
-                "token": "address",
+                "token": "business_address",
                 "label": "Address",
                 "type": "object",
                 "store": "lookup"
             },
             {
-                "token": "phone_number",
+                "token": "business_phone_number",
                 "label": "Phone Number",
                 "type": "object",
                 "store": "lookup"

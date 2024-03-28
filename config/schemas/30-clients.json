@@ -5,6 +5,12 @@
         "parent": "members",
         "fields": [
             {
+                "token": "client_manager",
+                "label": "Owner",
+                "type": "string",
+                "store": "filter"
+            },
+            {
                 "token": "manager_reference",
                 "label": "Manager Reference",
                 "parent": "managers",
@@ -12,49 +18,29 @@
                 "store": "lookup"
             },
             {
+                "token": "household_id",
+                "label": "Household ID",
+                "type": "number",
+                "store": "filter"
+            },
+            {
+                "token": "household_token",
+                "label": "Household Token",
+                "type": "string",
+                "store": "filter"
+            },
+            {
                 "token": "household_role",
                 "label": "Household Role",
-                "type": "enum",
-                "store": "lookup",
-                "values": [
-                    { "child": "Child"},
-                    {"child_in_law": "Child-in-law"},
-                    {"ex_partner": "Ex-Partner"},
-                    {"ex_spouse": "Ex-Spouse"},
-                    {"fiance": "Fiance"},
-                    {"grandchild": "Grandchild"},
-                    {"grandparent": "Grandparent"},
-                    {"guardian": "Guardian"},
-                    {"other_extended_family": "Other Extended Family"},
-                    {"parent": "Parent"},
-                    {"parent_in_law": "Parent-in-law"},
-                    {"partner": "Partner"},
-                    {"primary_contact": "Primary Contact"},
-                    {"sibling": "Sibling"},
-                    {"sibling_in_law": "Sibling-in-law"},
-                    {"spouse": "Spouse"},
-                    {"step_child": "Step Child"},
-                    {"step_grandchild": "Step Grandchild"},
-                    {"step_grandparent": "Step Grandparent"},
-                    {"step_parent": "Step Parent"},
-                    {"step_sibling": "Step Sibling"},
-                    {"other": "Other"}
-                ]
+                "type": "string",
+                "store": "filter"
             },
             {
                 "token": "household_reference",
                 "label": "Household",
                 "parent": "household",
                 "type": "fieldset",
-                "store": "lookup"
-            },
-            {
-                "token": "household_reference_role",
-                "label": "Household Role",
-                "parent": "household_reference",
-                "values": "household_role",
-                "type": "fieldset",
-                "store": "lookup"
+                "store": "filter"
             },
             {
                 "token": "business_reference",

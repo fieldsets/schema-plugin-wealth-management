@@ -2,7 +2,6 @@
     {
         "token": "accounts",
         "label": "Accounts",
-        "parent": "associations",
         "fields": [
             {
                 "token": "account_id",
@@ -48,7 +47,7 @@
                 "parent": "business",
                 "type": "fieldset",
                 "store": "lookup"
-            },
+            }
         ]
     }
 ]

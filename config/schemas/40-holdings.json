@@ -2,7 +2,6 @@
     {
         "token": "holdings",
         "label": "Holdings",
-        "parent": "activity",
         "fields": [
             {
                 "token": "holdings_account",

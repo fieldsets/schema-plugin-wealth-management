@@ -2,7 +2,6 @@
     {
         "token": "asset_class",
         "label": "Asset Class",
-        "parent": "associations",
         "fields": [
             {
                 "token": "asset_class_name",
@@ -15,7 +14,6 @@
     {
         "token": "assets",
         "label": "Assets",
-        "parent": "members",
         "fields": [
             {
                 "token": "asset_type",

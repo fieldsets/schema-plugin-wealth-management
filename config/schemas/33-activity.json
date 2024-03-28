@@ -2,7 +2,6 @@
     {
         "token": "activity",
         "label": "Activity",
-        "parent": "associations",
         "fields": [
             {
                 "token": "activity_description",

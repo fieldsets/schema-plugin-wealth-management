@@ -2,8 +2,13 @@
     {
         "token": "reports",
         "label": "Reports",
-        "parent": "associations",
         "fields": [
+            {
+                "token": "report_id",
+                "label": "Report ID",
+                "type": "string",
+                "store": "filter"
+            },
             {
                 "token": "report_type",
                 "label": "Report Type",
@@ -16,15 +21,17 @@
                 "type": "enum",
                 "store": "filter",
                 "values": [
-                    {"excel" : "Excel Spreadsheet"},
-                    {"csv" : "Comma Separated Values"},
-                    {"tsv": "Tab Separated Values"},
-                    {"text" : "Text File"},
-                    {"json": "JSON File"},
-                    {"md": "Markdown File"},
-                    {"xml": "XML File"},
-                    {"custom": "Custom Output"},
-                    {"none": "No Output"}
+                    {"excel_report" : "Excel Spreadsheet"},
+                    {"csv_report" : "Comma Separated Values"},
+                    {"tsv_report": "Tab Separated Values"},
+                    {"text_report" : "Text File"},
+                    {"json_report": "JSON File"},
+                    {"md_report": "Markdown File"},
+                    {"xml_report": "XML File"},
+                    {"html_report": "HTML File"},
+                    {"pdf_report":"PDF"},
+                    {"custom_report": "Custom Output"},
+                    {"no_report": "No Output"}
                 ]
             },
             {
