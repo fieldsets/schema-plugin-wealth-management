@@ -67,7 +67,7 @@
             {
                 "token": "client_reference",
                 "label": "Client Reference",
-                "parent": "clients",
+                "values": "clients",
                 "type": "fieldset",
                 "store": "lookup"
             }

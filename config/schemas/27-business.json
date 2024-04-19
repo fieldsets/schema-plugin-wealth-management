@@ -7,13 +7,13 @@
             {
                 "token": "business_address",
                 "label": "Address",
-                "type": "object",
+                "type": "string",
                 "store": "lookup"
             },
             {
                 "token": "business_phone_number",
                 "label": "Phone Number",
-                "type": "object",
+                "type": "string",
                 "store": "lookup"
             }
         ]

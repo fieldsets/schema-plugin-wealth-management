@@ -30,21 +30,21 @@
             {
                 "token": "client_reference",
                 "label": "Client Reference",
-                "parent": "clients",
+                "values": "clients",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
                 "token": "household_reference",
                 "label": "Household Reference",
-                "parent": "household",
+                "values": "household",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
                 "token": "business_reference",
                 "label": "Business Reference",
-                "parent": "business",
+                "values": "business",
                 "type": "fieldset",
                 "store": "lookup"
             }

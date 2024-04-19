@@ -13,7 +13,7 @@
             {
                 "token": "manager_reference",
                 "label": "Manager Reference",
-                "parent": "managers",
+                "values": "managers",
                 "type": "fieldset",
                 "store": "lookup"
             },
@@ -38,14 +38,14 @@
             {
                 "token": "household_reference",
                 "label": "Household",
-                "parent": "household",
+                "values": "household",
                 "type": "fieldset",
                 "store": "filter"
             },
             {
                 "token": "business_reference",
                 "label": "Business",
-                "parent": "businesses",
+                "values": "business",
                 "type": "fieldset",
                 "store": "lookup"
             }

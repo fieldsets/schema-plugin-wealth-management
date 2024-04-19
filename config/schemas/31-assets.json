@@ -16,10 +16,31 @@
         "label": "Assets",
         "fields": [
             {
+                "token": "asset_class_reference",
+                "label": "Asset Class",
+                "type": "fieldset",
+                "values": "asset_class",
+                "store": "filter"
+            },
+            {
                 "token": "asset_type",
                 "label": "Asset Type",
-                "parent": "asset_class",
                 "type": "enum",
+                "store": "filter",
+                "values": [
+                    {"asset_type_allocation_strategies":"Allocation Strategies"},
+                    {"asset_type_alternative_investment": "Alternative Investment"},
+                    {"asset_type_balanced": "Balanced"},
+                    {"asset_type_cash": "Cash"},
+                    {"asset_type_equity": "Equity"},
+                    {"asset_type_fixed_income": "Fixed Income"},
+                    {"asset_type_other": "Other"}
+                ]
+            },
+            {
+                "token": "asset_id",
+                "label": "Asset CUSIP",
+                "type": "string",
                 "store": "filter"
             },
             {
@@ -35,26 +56,8 @@
                 "store": "filter"
             },
             {
-                "token": "asset_url",
-                "label": "Asset URL",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "asset_close_price",
-                "label": "Asset Close Price",
-                "type": "decimal",
-                "store": "record"
-            },
-            {
-                "token": "asset_open_price",
-                "label": "Asset Open Price",
-                "type": "decimal",
-                "store": "record"
-            },
-            {
-                "token": "asset_avg_price",
-                "label": "Asset Avg Price",
+                "token": "asset_price",
+                "label": "Asset Price",
                 "type": "decimal",
                 "store": "record"
             }
