@@ -22,8 +22,14 @@
                 "store": "filter"
             },
             {
-                "token": "account_group",
-                "label": "Account Group",
+                "token": "account_category",
+                "label": "Account Category",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "account_description",
+                "label": "Account Description",
                 "type": "string",
                 "store": "filter"
             },
@@ -31,6 +37,13 @@
                 "token": "client_reference",
                 "label": "Client Reference",
                 "values": "clients",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "manager_reference",
+                "label": "Manager Reference",
+                "values": "managers",
                 "type": "fieldset",
                 "store": "lookup"
             },
@@ -47,6 +60,12 @@
                 "values": "business",
                 "type": "fieldset",
                 "store": "lookup"
+            },
+            {
+                "token": "account_value",
+                "label": "Account Value",
+                "type": "decimal",
+                "store": "record"
             }
         ]
     }
