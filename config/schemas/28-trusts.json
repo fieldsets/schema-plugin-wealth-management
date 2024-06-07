@@ -1,0 +1,15 @@
+[
+    {
+        "token": "trust",
+        "label": "trust",
+        "parent": "associations",
+        "fields": [
+            {
+                "token": "trust_trustees",
+                "label": "Trustees",
+                "type": "fieldset",
+                "store": "lookup"
+            }
+        ]
+    }
+]

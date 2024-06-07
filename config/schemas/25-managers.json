@@ -77,7 +77,7 @@
                 "store": "filter"
             },
             {
-                "token": "client_reference",
+                "token": "manager_client_reference",
                 "label": "Client Reference",
                 "values": "clients",
                 "type": "fieldset",
