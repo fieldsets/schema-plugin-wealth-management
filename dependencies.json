@@ -1,12 +1,11 @@
 {
-    "schemas":[],
     "plugins":[
         {
-            "name": "crm",
+            "name": "Fieldsets CRM Schema Plugin",
             "token": "schema-plugin-crm",
             "url": "git@github.com:fieldsets/schema-plugin-crm.git"
         }
     ],
     "packages":[],
-    "containers": []
+    "containers": ["fieldsets-local"]
 }

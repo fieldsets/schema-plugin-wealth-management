@@ -1,4 +1,5 @@
 {
+    "token": "wealth-management-schema",
     "schema": "wealth-management",
     "version": "1.0.0",
     "db_name": "wealth-management"
