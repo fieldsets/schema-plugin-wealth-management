@@ -19,7 +19,7 @@ foreach ($schema in $schemas) {
         $priority = $split_name[0]
         $token = $split_name[1]
 
-        & "/fieldsets-bin/import-json.sh" -token "$($token)" -source 'crm' -json "$($schemaJSON)" -type 'schema' -priority $($priority)
+        & "/usr/local/fieldsets/bin/import-json.sh" -token "$($token)" -source 'crm' -json "$($schemaJSON)" -type 'schema' -priority $($priority)
     }
 }
 
@@ -31,7 +31,7 @@ foreach ($datapoint in $data) {
         $priority = $split_name[0]
         $token = $split_name[1]
 
-        & "/fieldsets-bin/import-json.sh" -token "$($token)" -source 'wealth-management' -json "$($dataJSON)" -type 'data' -priority $($priority)
+        & "/usr/local/fieldsets/bin/import-json.sh" -token "$($token)" -source 'wealth-management' -json "$($dataJSON)" -type 'data' -priority $($priority)
     }
 }
 
