@@ -17,6 +17,18 @@
                 "store": "filter"
             },
             {
+                "token": "manager_code",
+                "label": "Manager Code",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "custodian_code",
+                "label": "Custodian Code",
+                "type": "string",
+                "store": "filter"
+            },
+            {
                 "token": "organization_uuid",
                 "label": "Organization UUID",
                 "type": "uuid",
@@ -65,7 +77,7 @@
                 "store": "filter"
             },
             {
-                "token": "client_reference",
+                "token": "manager_client_reference",
                 "label": "Client Reference",
                 "values": "clients",
                 "type": "fieldset",

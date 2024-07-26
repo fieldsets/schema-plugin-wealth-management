@@ -36,14 +36,14 @@
                 "store": "filter"
             },
             {
-                "token": "household_reference",
+                "token": "client_household_reference",
                 "label": "Household",
                 "values": "household",
                 "type": "fieldset",
                 "store": "filter"
             },
             {
-                "token": "business_reference",
+                "token": "client_business_reference",
                 "label": "Business",
                 "values": "business",
                 "type": "fieldset",
