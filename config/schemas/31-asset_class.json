@@ -1,0 +1,14 @@
+[
+    {
+        "token": "asset_class",
+        "label": "Asset Class",
+        "fields": [
+            {
+                "token": "asset_class_name",
+                "label": "Asset Class Name",
+                "type": "string",
+                "store": "filter"
+            }
+        ]
+    }
+]

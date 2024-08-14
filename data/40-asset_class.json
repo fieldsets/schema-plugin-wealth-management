@@ -56,145 +56,145 @@
     {
         "token": "asset_class_us_small_cap",
         "label": "U.S. Small Cap",
-        "parent": "asset_class_stocks",
+        "parent": "asset_class",
         "asset_class_name": "U.S. Small Market Cap Stocks"
     },
     {
         "token": "asset_class_us_mid_cap",
         "label": "U.S. Mid Cap",
-        "parent": "asset_class_stocks",
+        "parent": "asset_class",
         "asset_class_name": "Mid Market Cap Stocks"
     },
     {
         "token": "asset_class_us_large_cap",
         "label": "U.S. Large Cap",
-        "parent": "asset_class_stocks",
+        "parent": "asset_class",
         "asset_class_name": "U.S.Large Market Cap"
     },
     {
         "token": "asset_class_domestic_stocks",
         "label": "Domestic stocks",
-        "parent": "asset_class_stocks",
+        "parent": "asset_class",
         "asset_class_name": "Domestic Stocks"
     },
     {
         "token": "asset_class_intl_dev_mkts",
         "label": "Intl Dev Mkts",
-        "parent": "asset_class_stocks",
+        "parent": "asset_class",
         "asset_class_name": "International Developmental Market Stocks"
     },
     {
         "token": "asset_class_intl_emerg_mkts",
         "label": "Intl Emerg Mkts",
-        "parent": "asset_class_stocks",
+        "parent": "asset_class",
         "asset_class_name": "International Emerging Market Stocks"
     },
     {
         "token": "asset_class_corporate_bonds",
         "label": "Corporate bonds",
-        "parent": "asset_class_bonds",
+        "parent": "asset_class",
         "asset_class_name": "Corporate Bonds"
     },
     {
         "token": "asset_class_municipal_bonds",
         "label": "Municipal bonds",
-        "parent": "asset_class_bonds",
+        "parent": "asset_class",
         "asset_class_name": "Municipal Bonds"
     },
     {
         "token": "asset_class_government_bonds",
         "label": "Government bonds",
-        "parent": "asset_class_bonds",
+        "parent": "asset_class",
         "asset_class_name": "Government Bonds"
     },
     {
         "token": "asset_class_agency_bonds",
         "label": "Agency bonds",
-        "parent": "asset_class_bonds",
+        "parent": "asset_class",
         "asset_class_name": "Agency Bonds"
     },
     {
         "token": "asset_class_investment_grade_bonds",
         "label": "Investment-grade bonds",
-        "parent": "asset_class_bonds",
+        "parent": "asset_class",
         "asset_class_name": "Investment-Grade Bonds"
     },
     {
         "token": "asset_class_high_yield_bonds",
         "label": "High-yield bonds",
-        "parent": "asset_class_bonds",
+        "parent": "asset_class",
         "asset_class_name": "High-Yield Bonds"
     },
     {
         "token": "asset_class_junk_bonds",
         "label": "Junk bonds",
-        "parent": "asset_class_bonds",
+        "parent": "asset_class",
         "asset_class_name": "Junk Bonds"
     },
     {
         "token": "asset_class_domestic_bonds",
         "label": "Domestic bonds",
-        "parent": "asset_class_bonds",
+        "parent": "asset_class",
         "asset_class_name": "Domestic Bonds"
     },
     {
         "token": "asset_class_international_bonds",
         "label": "International bonds",
-        "parent": "asset_class_bonds",
+        "parent": "asset_class",
         "asset_class_name": "International Bonds"
     },
     {
         "token": "asset_class_private_real_estate",
         "label": "Private Real Estate",
-        "parent": "asset_class_real_estate",
+        "parent": "asset_class",
         "asset_class_name": "Privately Owned Real Estate"
     },
     {
         "token": "asset_class_reit",
         "label": "Real estate investment trust",
-        "parent": "asset_class_real_estate",
+        "parent": "asset_class",
         "asset_class_name": "Real Estate Investment Trust (REIT)"
     },
     {
         "token": "asset_class_equity_reit",
         "label": "Equity REIT",
-        "parent": "asset_class_reit",
+        "parent": "asset_class",
         "asset_class_name": "Equity REIT"
     },
     {
         "token": "asset_class_mortgage_reit",
         "label": "Mortgage REIT",
-        "parent": "asset_class_reit",
+        "parent": "asset_class",
         "asset_class_name": "Mortgage REIT"
     },
     {
         "token": "asset_class_hybrid_reit",
         "label": "Hybrid REIT",
-        "parent": "asset_class_reit",
+        "parent": "asset_class",
         "asset_class_name": "Hybrid REIT"
     },
     {
         "token": "asset_class_agricultural",
         "label": "Agricultural commodities",
-        "parent": "asset_class_commodities",
+        "parent": "asset_class",
         "asset_class_name": "Agricultural Commodities"
     },
     {
         "token": "asset_class_energy",
         "label": "Energy",
-        "parent": "asset_class_commodities",
+        "parent": "asset_class",
         "asset_class_name": "Energy"
     },
     {
         "token": "asset_class_precious_metals",
         "label": "Precious metals",
-        "parent": "asset_class_commodities",
+        "parent": "asset_class",
         "asset_class_name": "Precious Metals"
     },
     {
         "token": "asset_class_industrial_metals",
         "label": "Industrial metals",
-        "parent": "asset_class_commodities",
+        "parent": "asset_class",
         "asset_class_name": "Industrial Metals"
     },
     {

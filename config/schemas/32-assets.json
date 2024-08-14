@@ -1,0 +1,54 @@
+[
+    {
+        "token": "assets",
+        "label": "Assets",
+        "fields": [
+            {
+                "token": "asset_class_reference",
+                "label": "Asset Class",
+                "type": "fieldset",
+                "values": "asset_class",
+                "store": "filter"
+            },
+            {
+                "token": "asset_type",
+                "label": "Asset Type",
+                "type": "enum",
+                "store": "filter",
+                "values": [
+                    {"asset_type_allocation_strategies":"Allocation Strategies"},
+                    {"asset_type_alternative_investment": "Alternative Investment"},
+                    {"asset_type_balanced": "Balanced"},
+                    {"asset_type_cash": "Cash"},
+                    {"asset_type_equity": "Equity"},
+                    {"asset_type_fixed_income": "Fixed Income"},
+                    {"asset_type_other": "Other"}
+                ]
+            },
+            {
+                "token": "asset_id",
+                "label": "Asset CUSIP",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "asset_symbol",
+                "label": "Asset Symbol",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "asset_name",
+                "label": "Asset Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "asset_price",
+                "label": "Asset Price",
+                "type": "decimal",
+                "store": "record"
+            }
+        ]
+    }
+]

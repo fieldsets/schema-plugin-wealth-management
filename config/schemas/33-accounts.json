@@ -1,0 +1,91 @@
+[
+    {
+        "token": "accounts",
+        "label": "Accounts",
+        "fields": [
+            {
+                "token": "account_id",
+                "label": "Account ID",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "account_id",
+                "label": "Account ID",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "account_name",
+                "label": "Account Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "account_type",
+                "label": "Account Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "account_category",
+                "label": "Account Category",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "account_description",
+                "label": "Account Description",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "account_notes",
+                "label": "Account Notes",
+                "type": "string",
+                "store": "document"
+            },
+            {
+                "token": "account_client_reference",
+                "label": "Client Reference",
+                "values": "clients",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "account_manager_reference",
+                "label": "Manager Reference",
+                "values": "managers",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "account_household_reference",
+                "label": "Household Reference",
+                "values": "household",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "account_business_reference",
+                "label": "Business Reference",
+                "values": "business",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "account_trust_reference",
+                "label": "Trust Reference",
+                "values": "trust",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "account_value",
+                "label": "Account Value",
+                "type": "decimal",
+                "store": "record"
+            }
+        ]
+    }
+]
