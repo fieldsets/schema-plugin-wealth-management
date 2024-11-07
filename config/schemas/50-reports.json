@@ -35,16 +35,10 @@
                 ]
             },
             {
-                "token": "report_output_path",
-                "label": "Report Output Path",
+                "token": "report_file_path",
+                "label": "Report file Path",
                 "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "report_input_path",
-                "label": "Report Input Path",
-                "type": "string",
-                "store": "filter"
+                "store": "record"
             }
         ]
     }

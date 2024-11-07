@@ -1,0 +1,12 @@
+{
+    "token": "asset_sample",
+    "label": "SAMPLE",
+    "parent": "assets",
+    "asset_id": "111111111",
+    "asset_name": "Sample Asset",
+    "asset_symbol": "SAMPLE",
+    "asset_class_reference": "asset_class_us_small_cap",
+    "asset_type": "asset_type_equity",
+    "asset_price": "1.00",
+    "created": "2024-08-23T15:54:51.331Z"
+}

@@ -11,42 +11,6 @@
                 "store": "filter"
             },
             {
-                "token": "manager_uuid",
-                "label": "Manager UUID",
-                "type": "uuid",
-                "store": "filter"
-            },
-            {
-                "token": "manager_code",
-                "label": "Manager Code",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "custodian_code",
-                "label": "Custodian Code",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "organization_uuid",
-                "label": "Organization UUID",
-                "type": "uuid",
-                "store": "filter"
-            },
-            {
-                "token": "organization_uuid",
-                "label": "Organization UUID",
-                "type": "uuid",
-                "store": "filter"
-            },
-            {
-                "token": "business_unit",
-                "label": "Business Unit",
-                "type": "string",
-                "store": "filter"
-            },
-            {
                 "token": "manager_firstname",
                 "label": "Firstname",
                 "type": "string",
@@ -65,23 +29,23 @@
                 "store": "filter"
             },
             {
-                "token": "manager_mailbox",
-                "label": "Default Mailbox",
-                "type": "string",
-                "store": "filter"
-            },
-            {
                 "token": "manager_email",
                 "label": "Email",
                 "type": "string",
                 "store": "filter"
-            },
+            }
+        ]
+    },
+    {
+        "token": "management_team",
+        "label": "Management Team",
+        "parent": "associations",
+        "fields": [
             {
-                "token": "manager_client_reference",
-                "label": "Client Reference",
-                "values": "clients",
-                "type": "fieldset",
-                "store": "lookup"
+                "token": "management_team_code",
+                "label": "Management Team Code",
+                "type": "string",
+                "store": "filter"
             }
         ]
     }

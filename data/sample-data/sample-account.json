@@ -1,0 +1,18 @@
+{
+    "token": "A12345678",
+    "label": "Sample Account",
+    "parent": "accounts",
+    "account_id": "A12345678",
+    "account_name": "Sample Account",
+    "account_type": "sample_account_type",
+    "account_group": "sample_account_group",
+    "account_category": "sample_category",
+    "account_description": "Sample Account Description",
+    "account_value": "10,000,000.00",
+    "account_client_reference": "sample_client",
+    "account_manager_reference": "sample_manager",
+    "account_trust_reference": "sample_trust",
+    "account_business_reference": "sample_business",
+    "account_household_reference": "sample_household",
+    "account_notes": "Sample Account Notes"
+}

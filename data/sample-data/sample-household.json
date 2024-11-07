@@ -1,0 +1,11 @@
+{
+    "association_status": "household_active_status",
+    "household_phone_number": "(111) 222-3456",
+    "token": "data_sample_family",
+    "parent": "household",
+    "label": "Data, Sample Family",
+    "association_id": "1234567",
+    "household_address": "123 Sample St, Sampletown, NY 111111",
+    "household_segment": "segment_a_plus",
+    "association_uuid": "11111111-1111-1111-1111-111111111111"
+}

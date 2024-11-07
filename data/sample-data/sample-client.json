@@ -1,0 +1,38 @@
+{
+    "token":  "client_sample",
+    "label":  "Client, Sample",
+    "parent":  "clients",
+    "member_id":  "12345678",
+    "member_uuid":  "11111111-1111-1111-1111-111111111111",
+    "member_type":  "client",
+    "member_status":  "member_active_status",
+    "client_dob":  "1/1/1111",
+    "client_type":  "segment_a_plus",
+    "client_firstname":  "Sample",
+    "client_lastname":  "Client",
+    "client_middlename":  "",
+    "client_gender":  "gender_male",
+    "client_email":  [
+                         "sample.client@sample.com",
+                         null,
+                         null
+                     ],
+    "client_phone_number":  [
+                                "(111) 111-1111",
+                                null,
+                                null,
+                                null
+                            ],
+    "client_address":  [
+                           "NY\r\nUS",
+                           null,
+                           "123 Sample St\r\nSampletown, NY 11111\r\nUS"
+                       ],
+    "client_manager":  "Manager, Sample 111111",
+    "manager_reference":  "",
+    "household_id":  "",
+    "household_token":  "household_sample_family",
+    "household_role":  "Client",
+    "household_reference":  "",
+    "business_reference":  ""
+}

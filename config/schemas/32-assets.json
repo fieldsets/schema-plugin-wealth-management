@@ -11,19 +11,10 @@
                 "store": "filter"
             },
             {
-                "token": "asset_type",
-                "label": "Asset Type",
-                "type": "enum",
-                "store": "filter",
-                "values": [
-                    {"asset_type_allocation_strategies":"Allocation Strategies"},
-                    {"asset_type_alternative_investment": "Alternative Investment"},
-                    {"asset_type_balanced": "Balanced"},
-                    {"asset_type_cash": "Cash"},
-                    {"asset_type_equity": "Equity"},
-                    {"asset_type_fixed_income": "Fixed Income"},
-                    {"asset_type_other": "Other"}
-                ]
+                "token": "asset_sector",
+                "label": "Asset Sector",
+                "type": "string",
+                "store": "filter"
             },
             {
                 "token": "asset_id",

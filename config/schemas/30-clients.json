@@ -11,6 +11,24 @@
                 "store": "filter"
             },
             {
+                "token": "client_firstname",
+                "label": "Firstname",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "client_middlename",
+                "label": "Middle Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "client_lastname",
+                "label": "Last Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
                 "token": "manager_reference",
                 "label": "Manager Reference",
                 "values": "managers",

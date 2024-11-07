@@ -4,24 +4,24 @@
         "label": "Holdings",
         "fields": [
             {
-                "token": "holdings_account",
+                "token": "holdings_name",
+                "label": "Holdings Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "holdings_account_reference",
                 "label": "Holdings Account",
                 "values": "accounts",
                 "type": "fieldset",
-                "store": "record"
+                "store": "filter"
             },
             {
-                "token": "holdings_asset",
+                "token": "holdings_asset_reference",
                 "label": "Holdings Asset",
                 "values": "assets",
                 "type": "fieldset",
-                "store": "record"
-            },
-            {
-                "token": "holdings_price",
-                "label": "Holdings Asset Price",
-                "type": "decimal",
-                "store": "record"
+                "store": "filter"
             },
             {
                 "token": "holdings_quantity",
@@ -32,11 +32,37 @@
             {
                 "token": "holdings_value",
                 "label": "Holdings Value",
-                "type": "function",
-                "value": {
-                    "type": "sql",
-                    "cmd": "(holdings_price * holdings_quantity)"
-                },
+                "type": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "holdings_activity_type",
+                "label": "Activity Type",
+                "type": "enum",
+                "values": [
+                    {"holdings_activity_buy": "Buy"},
+                    {"holdings_activity_sell": "Sell"},
+                    {"holdings_activity_update": "Update"},
+                    {"holdings_activity_none": "None"}
+                ],
+                "store": "record"
+            },
+            {
+                "token": "holdings_activity_qty",
+                "label": "Activity Quantity",
+                "type": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "holdings_activity_value",
+                "label": "Activity Value",
+                "type": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "holdings_activity_price",
+                "label": "Activity Price",
+                "type": "decimal",
                 "store": "record"
             }
         ]

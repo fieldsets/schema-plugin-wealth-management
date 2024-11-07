@@ -5,6 +5,12 @@
         "parent": "associations",
         "fields": [
             {
+                "token": "household_name",
+                "label": "Household Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
                 "token": "household_address",
                 "label": "Address",
                 "type": "string",
@@ -15,20 +21,6 @@
                 "label": "Phone Number",
                 "type": "string",
                 "store": "lookup"
-            },
-            {
-                "token": "household_segment",
-                "label": "Household Segment",
-                "type": "enum",
-                "store": "filter",
-                "values": [
-                    {"segment_a_plus":"A+"},
-                    {"segment_a":"A"},
-                    {"segment_b":"B"},
-                    {"segment_c":"C"},
-                    {"segment_none":"Unsegmented"},
-                    {"prospect":"Prospect"}
-                ]
             }
         ]
     }

@@ -5,6 +5,18 @@
         "parent": "associations",
         "fields": [
             {
+                "token": "trust_name",
+                "label": "Trust Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "trust_type",
+                "label": "Trust Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
                 "token": "trust_trustees",
                 "label": "Trustees",
                 "type": "fieldset",

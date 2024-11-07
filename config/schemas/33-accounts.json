@@ -10,12 +10,6 @@
                 "store": "filter"
             },
             {
-                "token": "account_id",
-                "label": "Account ID",
-                "type": "string",
-                "store": "filter"
-            },
-            {
                 "token": "account_name",
                 "label": "Account Name",
                 "type": "string",

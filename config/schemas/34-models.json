@@ -1,0 +1,20 @@
+[
+    {
+        "token": "models",
+        "label": "Models",
+        "fields": [
+            {
+                "token": "model_id",
+                "label": "Model ID",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "model_name",
+                "label": "Model Name",
+                "type": "string",
+                "store": "filter"
+            }
+        ]
+    }
+]
