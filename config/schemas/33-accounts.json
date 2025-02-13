@@ -22,9 +22,33 @@
                 "store": "filter"
             },
             {
+                "token": "account_number",
+                "label": "Account Code",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "account_code",
+                "label": "Account Code",
+                "type": "string",
+                "store": "filter"
+            },
+            {
                 "token": "account_category",
                 "label": "Account Category",
                 "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "account_group",
+                "label": "Account Group",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "account_label",
+                "label": "Account Label",
+                "type": "string",
                 "store": "filter"
             },
             {
@@ -40,45 +64,476 @@
                 "store": "document"
             },
             {
-                "token": "account_client_reference",
-                "label": "Client Reference",
+                "token": "account_value",
+                "label": "Account Value",
+                "type": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "account_status",
+                "label": "Account Status",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "account_tax_status",
+                "label": "Account Tax Status",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "account_payer",
+                "label": "Payer",
+                "type": "fieldset",
+                "store": "filter"
+            },
+            {
+                "token": "account_clients_reference_relationship",
+                "label": "Client Reference Relationship",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "account_primary_client",
+                "label": "Primary Clients",
+                "values": "clients",
+                "type": "fieldset",
+                "store": "filter"
+            },
+            {
+                "token": "account_clients",
+                "label": "Account Clients",
                 "values": "clients",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
-                "token": "account_manager_reference",
-                "label": "Manager Reference",
+                "token": "account_primary_manager",
+                "label": "Primary Manager",
+                "values": "managers",
+                "type": "fieldset",
+                "store": "filter"
+            },
+            {
+                "token": "account_managers",
+                "label": "Manager Teams",
                 "values": "managers",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
-                "token": "account_household_reference",
-                "label": "Household Reference",
+                "token": "account_primary_household",
+                "label": "Primay Household",
                 "values": "household",
                 "type": "fieldset",
-                "store": "lookup"
+                "store": "filter"
+            }
+        ]
+    },
+    {
+        "token": "billing_account",
+        "label": "Billing Account",
+        "parent": "accounts",
+        "fields": [
+            {
+                "token": "billing_account_status",
+                "label": "Billing Account Status",
+                "type": "string",
+                "store": "filter"
             },
             {
-                "token": "account_business_reference",
-                "label": "Business Reference",
-                "values": "business",
-                "type": "fieldset",
-                "store": "lookup"
+                "token": "billing_account_paid_to_date",
+                "label": "Billing Account Paid To Date",
+                "type": "date",
+                "store": "record"
             },
             {
-                "token": "account_trust_reference",
-                "label": "Trust Reference",
-                "values": "trust",
-                "type": "fieldset",
-                "store": "lookup"
+                "token": "billing_account_due_date",
+                "label": "Billing Account Due Date",
+                "type": "date",
+                "store": "record"
             },
             {
-                "token": "account_value",
-                "label": "Account Value",
+                "token": "billing_account_previous_payment",
+                "label": "Billing Account Previous Payment",
                 "type": "decimal",
                 "store": "record"
+            },
+            {
+                "token": "billing_account_past_due",
+                "label": "Billing Account Past Due",
+                "type": "bool",
+                "store": "filter"
+            },
+            {
+                "token": "billing_account_min_payment",
+                "label": "Billing Account Minimum Payment",
+                "type": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "billing_account_payment_frequency",
+                "label": "Billing Account Payment Frequency",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "billing_account_payment_method",
+                "label": "Billing Account Payment Method",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "billing_account_policy_count",
+                "label": "Billing Account Policy Count",
+                "type": "number",
+                "store": "filter"
+            },
+            {
+                "token": "billing_account_policies",
+                "label": "Billing Account Policies",
+                "values": "accounts",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "billing_account_history",
+                "label": "Billing Account History",
+                "type": "object",
+                "store": "document"
+            },
+            {
+                "token": "billing_account_interest_rate",
+                "label": "Billing Account Interest Rate",
+                "type": "decimal",
+                "store": "document"
+            },
+            {
+                "token": "billing_account_ytd_interest",
+                "label": "Billing Account YTD Interest",
+                "type": "decimal",
+                "store": "document"
+            },
+            {
+                "token": "billing_account_prev_yr_interest",
+                "label": "Billing Account Previous Year Interest",
+                "type": "decimal",
+                "store": "document"
+            },
+            {
+                "token": "billing_account_recurring_isa",
+                "label": "Billing Account Recurring Isa",
+                "type": "bool",
+                "store": "document"
+            },
+            {
+                "token": "billing_account_subtotals",
+                "label": "Billing Account Sub Totals",
+                "type": "object",
+                "store": "document"
+            },
+            {
+                "token": "billing_account_service_charge",
+                "label": "Billing Account Service Charge",
+                "type": "decimal",
+                "store": "document"
+            },
+            {
+                "token": "billing_account_address",
+                "label": "Billing Account Address",
+                "type": "string",
+                "store": "document"
+            },
+            {
+                "token": "billing_account_tin",
+                "label": "Billing Account TIN",
+                "type": "string",
+                "store": "document"
+            },
+            {
+                "token": "billing_account_bank",
+                "label": "Billing Account Bank",
+                "type": "object",
+                "store": "document"
+            },
+            {
+                "token": "billing_account_token_lookup",
+                "label": "Billing Account Token Lookup",
+                "type": "string",
+                "store": "lookup"
+            }
+        ]
+    },
+    {
+        "token": "product_account",
+        "label": "Product Account",
+        "parent": "accounts",
+        "fields": [
+            {
+                "token": "product_account_type",
+                "label": "Product Account Type",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "product_account_group",
+                "label": "Product Account Group",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "product_account_billing_account",
+                "label": "Product Billing Account",
+                "values": "billing_account",
+                "type": "fieldset",
+                "store": "filter"
+            },
+            {
+                "token": "product_account_begin_date",
+                "label": "Begin Date",
+                "type": "string",
+                "store": "document"
+            },
+            {
+                "token": "product_account_issue_date",
+                "label": "Issue Date",
+                "type": "date",
+                "store": "document"
+            },
+            {
+                "token": "product_account_policy_date",
+                "label": "Policy Date",
+                "type": "date",
+                "store": "document"
+            },
+            {
+                "token": "product_account_payment",
+                "label": "Product Account Payment",
+                "type": "decimal",
+                "store": "document"
+            },
+            {
+                "token": "product_account_payment_1035",
+                "label": "Product Account Payment 1035",
+                "type": "decimal",
+                "store": "document"
+            },
+            {
+                "token": "product_account_dividend",
+                "label": "Product Account Dividend",
+                "type": "object",
+                "store": "document"
+            },
+            {
+                "token": "product_account_premium",
+                "label": "Product Account Premium",
+                "type": "object",
+                "store": "document"
+            },
+            {
+                "token": "product_account_benefits",
+                "label": "Product Account Benefits",
+                "type": "object",
+                "store": "document"
+            },
+            {
+                "token": "product_account_beneficiaries",
+                "label": "Product Account Beneficiaries",
+                "type": "object",
+                "store": "document"
+            },
+            {
+                "token": "product_account_for_benefit_of",
+                "label": "Product Account For Benefit Of",
+                "type": "object",
+                "store": "document"
+            },
+            {
+                "token": "product_account_coverage",
+                "label": "Product Account Coverage",
+                "type": "object",
+                "store": "document"
+            },
+            {
+                "token": "product_account_loan",
+                "label": "Product Account Loan",
+                "type": "object",
+                "store": "document"
+            },
+            {
+                "token": "product_account_tin",
+                "label": "Product Account TIN",
+                "type": "string",
+                "store": "document"
+            },
+            {
+                "token": "product_account_invested_assets_amount",
+                "label": "Product Account Invested Assets Amount",
+                "type": "decimal",
+                "store": "document"
+            },
+            {
+                "token": "product_account_market_plan",
+                "label": "Product Account Market Plan",
+                "type": "string",
+                "store": "document"
+            },
+            {
+                "token": "product_account_investment_class",
+                "label": "Product Account Investment Class",
+                "type": "string",
+                "store": "document"
+            },
+            {
+                "token": "product_account_surrender_value",
+                "label": "Product Account Surrender Value",
+                "type": "decimal",
+                "store": "document"
+            },
+            {
+                "token": "product_account_assets_held_at",
+                "label": "Product Account Assets Held At",
+                "type": "string",
+                "store": "document"
+            },
+            {
+                "token": "product_account_token_lookup",
+                "label": "Product Account Token Lookup",
+                "type": "string",
+                "store": "lookup"
+            }
+        ]
+    },
+    {
+        "token": "investment_account",
+        "label": "Investment Account",
+        "parent": "accounts",
+        "fields": [
+            {
+                "token": "investment_account_class",
+                "label": "Investment Account Class",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "investment_account_type",
+                "label": "Investment Account Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "investment_account_group",
+                "label": "Investment Account Group",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "investment_account_program",
+                "label": "Investment Account Program",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "investment_account_billing_account",
+                "label": "Investment Billing Account",
+                "type": "fieldset",
+                "store": "filter"
+            },
+            {
+                "token": "investment_account_objective",
+                "label": "Investment Account Objective",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "investment_account_risk_tolerance",
+                "label": "Investment Account Risk Tolerance",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "investment_account_model",
+                "label": "Investment Account model",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "investment_account_cash",
+                "label": "Investment Account Cash",
+                "type": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "investment_account_protected_cash",
+                "label": "Investment Account Protected Cash",
+                "type": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "investment_account_accrued",
+                "label": "Investment Account Accrued",
+                "type": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "investment_account_supervised",
+                "label": "Investment Account Supervised Amount",
+                "type": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "investment_account_unsupervised",
+                "label": "Investment Account Unupervised Amount",
+                "type": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "investment_account_fee",
+                "label": "Investment Account Fee",
+                "type": "decimal",
+                "store": "document"
+            },
+            {
+                "token": "investment_account_cash_percent",
+                "label": "Investment Account Cash %",
+                "type": "decimal",
+                "store": "document"
+            },
+            {
+                "token": "investment_account_tin",
+                "label": "Investment Account TIN",
+                "type": "string",
+                "store": "document"
+            },
+            {
+                "token": "investment_account_invested_assets_amount",
+                "label": "Investment Account Invested Assets Amount",
+                "type": "decimal",
+                "store": "document"
+            },
+            {
+                "token": "investment_account_assets_held_at",
+                "label": "Investment Account Assets Held At",
+                "type": "string",
+                "store": "document"
+            },
+            {
+                "token": "investment_account_beneficiaries",
+                "label": "Investment Account Beneficiaries",
+                "type": "object",
+                "store": "document"
+            },
+            {
+                "token": "investment_account_for_benefit_of",
+                "label": "Investment Account For Benefit Of",
+                "type": "object",
+                "store": "document"
+            },
+            {
+                "token": "investment_account_token_lookup",
+                "label": "Investment Account Token Lookup",
+                "type": "string",
+                "store": "lookup"
             }
         ]
     }
