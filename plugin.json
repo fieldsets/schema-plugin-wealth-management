@@ -2,7 +2,9 @@
     "name": "Fieldsets Wealth Management Schema Plugin",
     "token": "schema-plugin-wealth-management",
     "schema": "wealth-management",
+    "priority": 20,
     "version": "1.0.0",
-    "db_name": "wealth-management",
-    "url": "git@github.com:fieldsets/schema-plugin-wealth-management.git"
+    "db": "wealth-management",
+    "url": "https://github.com/fieldsets/schema-plugin-wealth-management",
+    "enabled": false
 }

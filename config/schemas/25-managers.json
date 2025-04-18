@@ -11,6 +11,16 @@
                 "store": "filter"
             },
             {
+                "token": "manager_type",
+                "label": "Manager Type",
+                "type": "enum",
+                "store": "filter",
+                "values": [
+                    {"manager_type_account": "Account Manager"},
+                    {"manager_type_team": "Team Manager"}
+                ]
+            },
+            {
                 "token": "manager_firstname",
                 "label": "Firstname",
                 "type": "string",
