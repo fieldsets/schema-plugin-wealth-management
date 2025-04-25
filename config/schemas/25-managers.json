@@ -11,14 +11,28 @@
                 "store": "filter"
             },
             {
-                "token": "manager_type",
-                "label": "Manager Type",
+                "token": "manager_token",
+                "label": "Manager Token",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "manager_status",
+                "label": "Status",
                 "type": "enum",
-                "store": "filter",
-                "values": [
-                    {"manager_type_account": "Account Manager"},
-                    {"manager_type_team": "Team Manager"}
-                ]
+                "store": "filter"
+            },
+            {
+                "token": "manager_group",
+                "label": "Group",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "manager_name",
+                "label": "Manager Name",
+                "type": "string",
+                "store": "filter"
             },
             {
                 "token": "manager_firstname",
@@ -43,20 +57,37 @@
                 "label": "Email",
                 "type": "string",
                 "store": "filter"
+            },
+            {
+                "token": "manager_key",
+                "label": "Manager Lookup Keys",
+                "type": "string",
+                "store": "lookup"
             }
         ]
     },
     {
-        "token": "management_team",
+        "token": "team",
         "label": "Management Team",
-        "parent": "associations",
         "fields": [
             {
-                "token": "management_team_code",
-                "label": "Management Team Code",
+                "token": "team_id",
+                "label": "Team ID",
                 "type": "string",
                 "store": "filter"
-            }
+            },
+            {
+                "token": "team_token",
+                "label": "Team Token",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "team_name",
+                "label": "Team Name",
+                "type": "string",
+                "store": "filter"
+            },
         ]
     }
 ]
