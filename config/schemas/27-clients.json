@@ -2,7 +2,6 @@
     {
         "token": "clients",
         "label": "Clients",
-        "parent": "members",
         "fields": [
             {
                 "token": "client_manager",
