@@ -4,67 +4,96 @@
         "label": "Clients",
         "fields": [
             {
-                "token": "client_manager",
-                "label": "Owner",
-                "type": "string",
+                "token": "client_type",
+                "label": "Client Type",
+                "type": "enum",
                 "store": "filter"
             },
             {
-                "token": "client_firstname",
-                "label": "Firstname",
-                "type": "string",
+                "token": "client_status",
+                "label": "Client Status",
+                "type": "enum",
                 "store": "filter"
             },
             {
-                "token": "client_middlename",
-                "label": "Middle Name",
-                "type": "string",
+                "token": "client_primary_household",
+                "label": "Client Primary Household",
+                "type": "fieldset",
+                "store": "filter",
+                "values": "households"
+            },
+            {
+                "token": "client_primary_household_role",
+                "label": "Client Primary Household Role",
+                "type": "enum",
                 "store": "filter"
             },
             {
-                "token": "client_lastname",
-                "label": "Last Name",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "manager_reference",
-                "label": "Manager Reference",
-                "values": "managers",
+                "token": "client_accounts",
+                "label": "Client Accounts",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
-                "token": "household_id",
-                "label": "Household ID",
-                "type": "number",
-                "store": "filter"
+                "token": "client_management_team",
+                "label": "Client Management Team",
+                "type": "fieldset",
+                "store": "filter",
+                "values": "teams"
             },
             {
-                "token": "household_token",
-                "label": "Household Token",
+                "token": "client_tin",
+                "label": "Client TIN",
                 "type": "string",
                 "store": "filter"
             },
             {
-                "token": "household_role",
-                "label": "Household Role",
+                "token": "client_masked_tin",
+                "label": "Client Masked TIN",
                 "type": "string",
                 "store": "filter"
             },
             {
-                "token": "client_household_reference",
-                "label": "Household",
-                "values": "household",
-                "type": "fieldset",
-                "store": "filter"
+                "token": "client_occupation",
+                "label": "Client Occupation",
+                "type": "string",
+                "store": "document"
             },
             {
-                "token": "client_business_reference",
-                "label": "Business",
-                "values": "business",
-                "type": "fieldset",
-                "store": "lookup"
+                "token": "client_employer",
+                "label": "Client Employer",
+                "type": "string",
+                "store": "document"
+            },
+            {
+                "token": "client_employment_status",
+                "label": "Client Employment Status",
+                "type": "enum",
+                "store": "document"
+            },
+            {
+                "token": "client_job_title",
+                "label": "Client Job Title",
+                "type": "string",
+                "store": "document"
+            },
+            {
+                "token": "client_job_title",
+                "label": "Client Job Title",
+                "type": "string",
+                "store": "document"
+            },
+            {
+                "token": "client_current_annual_income",
+                "label": "Client Current Annual Income",
+                "type": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "client_current_net_worth",
+                "label": "Client Current Net Worth",
+                "type": "decimal",
+                "store": "record"
             }
         ]
     }

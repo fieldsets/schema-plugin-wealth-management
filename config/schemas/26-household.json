@@ -5,20 +5,184 @@
         "parent": "associations",
         "fields": [
             {
+                "token": "household_id",
+                "label": "Household ID",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "household_token",
+                "label": "Household Token",
+                "type": "string",
+                "store": "filter"
+            },
+            {
                 "token": "household_name",
                 "label": "Household Name",
                 "type": "string",
                 "store": "filter"
             },
             {
-                "token": "household_address",
-                "label": "Address",
+                "token": "household_uuid",
+                "label": "Household UUID",
+                "type": "uuid",
+                "store": "filter"
+            },
+            {
+                "token": "household_description",
+                "label": "Household Description",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "household_member_count",
+                "label": "Household Member Count",
+                "type": "number",
+                "store": "filter"
+            },
+            {
+                "token": "household_dependent_count",
+                "label": "Household Dependent Count",
+                "type": "number",
+                "store": "filter"
+            },
+            {
+                "token": "household_status",
+                "label": "Household Status",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "household_primary_contact",
+                "label": "Household Primary Contact",
+                "type": "fieldset",
+                "store": "filter",
+                "values": "clients"
+            },
+            {
+                "token": "household_primary_address",
+                "label": "Household Primary Address",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "household_primary_email",
+                "label": "Household Primary Email",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "household_primary_phone",
+                "label": "Household Primary Phone",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "household_primary_phone",
+                "label": "Household Primary Phone",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "household_comments",
+                "label": "Household Comments",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "household_notes",
+                "label": "Household Notes",
+                "type": "string",
+                "store": "record"
+            },
+            {
+                "token": "household_accounts",
+                "label": "Household Accounts",
+                "type": "fieldset",
+                "store": "lookup",
+                "values": "accounts"
+            },
+            {
+                "token": "household_members",
+                "label": "Household Members",
+                "type": "fieldset",
+                "store": "lookup",
+                "values": "clients"
+            },
+            {
+                "token": "household_businesses",
+                "label": "Household Businesses",
+                "type": "fieldset",
+                "store": "lookup",
+                "values": "business"
+            },
+            {
+                "token": "household_trusts",
+                "label": "Household Trusts",
+                "type": "fieldset",
+                "store": "lookup",
+                "values": "trusts"
+            },
+            {
+                "token": "household_roles",
+                "label": "Household Roles",
+                "type": "object",
+                "store": "filter"
+            },
+            {
+                "token": "household_emails",
+                "label": "Household Emails",
                 "type": "string",
                 "store": "lookup"
             },
             {
-                "token": "household_phone_number",
-                "label": "Phone Number",
+                "token": "household_phone_numbers",
+                "label": "Household Emails",
+                "type": "string",
+                "store": "lookup"
+            },
+            {
+                "token": "household_addresses",
+                "label": "Household Emails",
+                "type": "object",
+                "store": "filter"
+            },
+            {
+                "token": "household_primary_manager",
+                "label": "Household Primary Manager",
+                "type": "fieldset",
+                "store": "filter",
+                "values": "managers"
+            },
+            {
+                "token": "household_management_team",
+                "label": "Household Management Team",
+                "type": "fieldset",
+                "store": "filter",
+                "values": "teams"
+            },
+            {
+                "token": "household_managers",
+                "label": "Household Managers",
+                "type": "fieldset",
+                "store": "lookup",
+                "values": "managers"
+            },
+            {
+                "token": "household_meta_data",
+                "label": "Household Meta Data",
+                "type": "object",
+                "store": "filter"
+            },
+            {
+                "token": "household_income",
+                "label": "Household Income",
+                "type": "decimal",
+                "store": "record"
+            },
+            {
+                "token": "household_key",
+                "label": "Household Keys",
                 "type": "string",
                 "store": "lookup"
             }

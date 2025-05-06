@@ -2,14 +2,8 @@
     {
         "token": "trust",
         "label": "trust",
-        "parent": "associations",
+        "parent": "clients",
         "fields": [
-            {
-                "token": "trust_name",
-                "label": "Trust Name",
-                "type": "string",
-                "store": "filter"
-            },
             {
                 "token": "trust_type",
                 "label": "Trust Type",
@@ -20,7 +14,15 @@
                 "token": "trust_trustees",
                 "label": "Trustees",
                 "type": "fieldset",
-                "store": "lookup"
+                "store": "lookup",
+                "values": "clients"
+            },
+            {
+                "token": "trust_beneficiaries",
+                "label": "Trust Beneficiaries",
+                "type": "fieldset",
+                "store": "lookup",
+                "values": "clients"
             }
         ]
     }

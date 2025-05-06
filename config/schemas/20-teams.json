@@ -1,0 +1,57 @@
+[
+    {
+        "token": "team",
+        "label": "Management Team",
+        "fields": [
+            {
+                "token": "team_id",
+                "label": "Team ID",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "team_uuid",
+                "label": "Team UUID",
+                "type": "uuid",
+                "store": "filter"
+            },
+            {
+                "token": "team_token",
+                "label": "Team Token",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "team_name",
+                "label": "Team Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "team_owner",
+                "label": "Team Owner",
+                "type": "fieldset",
+                "store": "filter"
+            },
+            {
+                "token": "team_managers",
+                "label": "Team Managers",
+                "type": "fieldset",
+                "store": "lookup",
+                "values": "managers"
+            },
+            {
+                "token": "team_meta_data",
+                "label": "Team Meta Data",
+                "type": "object",
+                "store": "filter"
+            },
+            {
+                "token": "team_key",
+                "label": "Team Key",
+                "type": "string",
+                "store": "lookup"
+            }
+        ]
+    }
+]

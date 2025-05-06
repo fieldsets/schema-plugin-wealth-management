@@ -2,7 +2,7 @@
 
 $plugin_path = (Get-Location).Path
 
-Write-Output "## Wealth Management Schema Plugin Config Script ##"
+Write-Output "## Wealth Management Schema Plugin Import Script ##"
 Write-Output "$($plugin_path)"
 
 $plugin = Get-Content -Raw -Path "$($plugin_path)/plugin.json" | ConvertFrom-Json

@@ -4,89 +4,24 @@
         "label": "Managers",
         "fields": [
             {
-                "token": "manager_id",
-                "label": "Manager ID",
-                "type": "string",
-                "store": "filter"
+                "token": "manager_primary_team",
+                "label": "Manager Primary Team",
+                "type": "fieldset",
+                "store": "filter",
+                "values": "teams"
             },
             {
-                "token": "manager_token",
-                "label": "Manager Token",
-                "type": "string",
+                "token": "manager_role",
+                "label": "Manager Role",
+                "type": "enum",
                 "store": "filter"
             },
             {
                 "token": "manager_status",
-                "label": "Status",
+                "label": "Manager Status",
                 "type": "enum",
                 "store": "filter"
-            },
-            {
-                "token": "manager_group",
-                "label": "Group",
-                "type": "enum",
-                "store": "filter"
-            },
-            {
-                "token": "manager_name",
-                "label": "Manager Name",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "manager_firstname",
-                "label": "Firstname",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "manager_middlename",
-                "label": "Middle Name",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "manager_lastname",
-                "label": "Last Name",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "manager_email",
-                "label": "Email",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "manager_key",
-                "label": "Manager Lookup Keys",
-                "type": "string",
-                "store": "lookup"
             }
-        ]
-    },
-    {
-        "token": "team",
-        "label": "Management Team",
-        "fields": [
-            {
-                "token": "team_id",
-                "label": "Team ID",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "team_token",
-                "label": "Team Token",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "team_name",
-                "label": "Team Name",
-                "type": "string",
-                "store": "filter"
-            },
         ]
     }
 ]

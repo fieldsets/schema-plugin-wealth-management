@@ -2,19 +2,20 @@
     {
         "token": "business",
         "label": "Business",
-        "parent": "associations",
+        "parent": "clients",
         "fields": [
             {
-                "token": "business_address",
-                "label": "Address",
-                "type": "string",
-                "store": "lookup"
+                "token": "business_type",
+                "label": "Business Type",
+                "type": "enum",
+                "store": "filter"
             },
             {
-                "token": "business_phone_number",
-                "label": "Phone Number",
-                "type": "string",
-                "store": "lookup"
+                "token": "business_owners",
+                "label": "Business Owners",
+                "type": "fieldset",
+                "store": "lookup",
+                "values": "clients"
             }
         ]
     }

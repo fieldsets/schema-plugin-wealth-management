@@ -6,5 +6,5 @@
     "version": "1.0.0",
     "db": "wealth-management",
     "url": "https://github.com/fieldsets/schema-plugin-wealth-management",
-    "enabled": false
+    "enabled": true
 }
