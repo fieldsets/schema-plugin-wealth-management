@@ -14,7 +14,7 @@ $data = Get-ChildItem "$($plugin_path)/data/*.json"
 foreach ($schema in $schemas) {
     $schemaObject = Get-Content -Raw -Path "$($schema)" | ConvertFrom-Json -NoEnumerate -AsHashtable
     if ($null -ne $schemaObject) {
-        $schemaJSON = ConvertTo-Json -depth 10 -Compress -InputObject $schemaObject
+        $schemaJSON = ConvertTo-Json -Depth 10 -Compress -InputObject $schemaObject
         $split_name = ($schema.BaseName).split("-",2)
         $priority = $split_name[0]
         $token = $split_name[1]
@@ -26,7 +26,7 @@ foreach ($schema in $schemas) {
 foreach ($datapoint in $data) {
     $dataObject = Get-Content -Raw -Path "$($datapoint)" | ConvertFrom-Json -NoEnumerate -AsHashtable
     if ($null -ne $dataObject) {
-        $dataJSON = ConvertTo-Json -depth 10 -Compress -InputObject $dataObject
+        $dataJSON = ConvertTo-Json -Depth 10 -Compress -InputObject $dataObject
         $split_name = ($datapoint.BaseName).split("-",2)
         $priority = $split_name[0]
         $token = $split_name[1]

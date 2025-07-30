@@ -35,8 +35,8 @@
                 "store": "lookup"
             },
             {
-                "token": "client_management_team",
-                "label": "Client Management Team",
+                "token": "client_primary_team",
+                "label": "Client Primary Team",
                 "type": "fieldset",
                 "store": "filter",
                 "values": "teams"

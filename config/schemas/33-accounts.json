@@ -115,7 +115,7 @@
                 "store": "filter"
             },
             {
-                "token": "account_managers",
+                "token": "account_teams",
                 "label": "Manager Teams",
                 "values": "managers",
                 "type": "fieldset",

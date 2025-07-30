@@ -155,18 +155,18 @@
                 "values": "managers"
             },
             {
-                "token": "household_management_team",
-                "label": "Household Management Team",
+                "token": "household_primary_team",
+                "label": "Household Primary Team",
                 "type": "fieldset",
                 "store": "filter",
                 "values": "teams"
             },
             {
-                "token": "household_managers",
-                "label": "Household Managers",
+                "token": "household_teams",
+                "label": "Household Teams",
                 "type": "fieldset",
                 "store": "lookup",
-                "values": "managers"
+                "values": "teams"
             },
             {
                 "token": "household_meta_data",
